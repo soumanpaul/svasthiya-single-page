@@ -39,7 +39,10 @@ REST API Documentatioin [here](http://foodzone2020.herokuapp.com/)
 
 Extensive Postman version of API documentation with examples [here](https://documenter.getpostman.com/view/5731747/SWLe6nhT?version=latest)
 
-![](/screens/output.gif)
+* Username: soumanpaul
+* Password: 123456
+
+![image](screens/output.gif)
 
 ---
 
