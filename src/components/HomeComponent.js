@@ -1,11 +1,11 @@
 import React from 'react';
 import FormComponent from './FormComponent'
-import Testes from './TestesComponent';
+import TextComponent from './TextComponent';
 
 function Home() {
     return (
         <div className="container">
-            <Testes />
+            <TextComponent />
             <FormComponent />
         </div>
     );

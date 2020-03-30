@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Testes() {
+export default function TextComponent() {
   return (
     <div className="row row-content justify-content-center">
 
