@@ -42,9 +42,9 @@
 .jumbotron {
     padding:200px 30px 200px 30px;
     margin:0px auto;
-    background-image: url("dicom.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-image: url("dicom.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
     color:rgb(146, 186, 206);
     width: 100%;
     height: auto;
