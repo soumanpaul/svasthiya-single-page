@@ -1,33 +1,15 @@
 # build environment
-FROM node:alpine
-
+FROM node:alpine as build
 WORKDIR /app
-
-# Install PM2 globally
-RUN npm install --global pm2
-
 ENV PATH /app/node_modules/.bin:$PATH
-
 COPY package.json /app/package.json
-
-
-# Install dependencies
-RUN npm install --production
-
+RUN npm install --silent
 RUN npm install react-scripts -g --silent
-
 COPY . /app
-
 RUN npm run build
 
-
-# Expose the listening port
-EXPOSE 3000
-
-# Run container as non-root (unprivileged) user
-# The "node" user is provided in the Node.js Alpine base image
-USER node
-
-# Launch app with PM2
-CMD [ "pm2-runtime", "start", "npm", "--", "start" ]
-
+# production environment
+FROM nginx:alpine
+COPY --from=build /app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

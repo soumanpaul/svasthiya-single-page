@@ -174,7 +174,7 @@ export default class FormComponent extends Component {
     return (
       <div className="row row-content  justify-content-center">
         <div className="col-12 col-md-9 ">
-          <h3>Contact Us</h3>
+          <h3>Submit informations</h3>
         </div>
         <div className="col-12 col-md-9 ">
           <Form onSubmit={this.handleSubmit}>

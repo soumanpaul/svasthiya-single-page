@@ -6,7 +6,6 @@ import {
     CarouselIndicators,
     // CarouselCaption
 } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
 const items = [
     {
         src: 'assets/images/mri1.jpg',
@@ -75,12 +74,10 @@ const Header = () => {
                 <div className="container">
 
                     <NavbarBrand className="nav-logo" href="/">
-                        <img src="assets/images/icon1.png" height="70" width="80"
+                        <img src="assets/images/icon1.png" height="55" width="80"
                             alt="Ristorante Con Fusion" />
                     </NavbarBrand>
-                    <NavLink className="nav-link" to="/">
                         <div className="Title">Svasthiya</div>
-                    </NavLink>
                 </div>
             </Navbar>
             <Carousel
